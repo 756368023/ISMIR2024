@@ -7,9 +7,9 @@ We introduce a versatile zero-shot music style transfer system that leverages th
 | Origina | style-transfer command | Baseline1: MusicGen | Baseline2: Coco-Mulla | Our Model |
 |---------|------------------------|---------------------|-----------------------|-----------|
 |[Original](demo_audio/Alone/Original.wav)|"Add some acoustic instruments."|[MusicGen](demo_audio/Alone/MusicGen.wav)|[Coco-Mulla](demo_audio/Alone/V1.wav)|[Our Model](demo_audio/Alone/V2.wav)|
-[Original](demo_audio/yyw/Original.wav)|"A cheerful EDM."|[MusicGen](demo_audio/yyw/MusicGen.wav) [Coco-Mulla](demo_audio/yyw/V1.wav) [Our Model](demo_audio/yyw/V2.wav)|
-[Original](demo_audio/Never-Gonna-Give-You-Up/Original.wav)|"A pop piece that sounds epic and orchestral."|[MusicGen](demo_audio/Never-Gonna-Give-You-Up/MusicGen.wav) [Coco-Mulla](demo_audio/Never-Gonna-Give-You-Up/V1.wav) [Our Model](demo_audio/Never-Gonna-Give-You-Up/V2.wav)|
-[Original](demo_audio/Layla/Original.wav)|"A piece that sounds Futuristic."|[MusicGen](demo_audio/Layla/MusicGen.wav) [Coco-Mulla](demo_audio/Layla/V1.wav) [Our Model](demo_audio/Layla/V2.wav)|
-[Original](demo_audio/Smurf/Original.wav)|"A country song with acoustic guitars."|[MusicGen](demo_audio/Smurf/MusicGen.wav) [Coco-Mulla](demo_audio/Smurf/V1.wav) [Our Model](demo_audio/Smurf/V2.wav)|
+[Original](demo_audio/yyw/Original.wav)|"A cheerful EDM."|[MusicGen](demo_audio/yyw/MusicGen.wav)|[Coco-Mulla](demo_audio/yyw/V1.wav)|[Our Model](demo_audio/yyw/V2.wav)|
+[Original](demo_audio/Never-Gonna-Give-You-Up/Original.wav)|"A pop piece that sounds epic and orchestral."|[MusicGen](demo_audio/Never-Gonna-Give-You-Up/MusicGen.wav)|[Coco-Mulla](demo_audio/Never-Gonna-Give-You-Up/V1.wav)|[Our Model](demo_audio/Never-Gonna-Give-You-Up/V2.wav)|
+[Original](demo_audio/Layla/Original.wav)|"A piece that sounds Futuristic."|[MusicGen](demo_audio/Layla/MusicGen.wav)|[Coco-Mulla](demo_audio/Layla/V1.wav)|[Our Model](demo_audio/Layla/V2.wav)|
+[Original](demo_audio/Smurf/Original.wav)|"A country song with acoustic guitars."|[MusicGen](demo_audio/Smurf/MusicGen.wav)|[Coco-Mulla](demo_audio/Smurf/V1.wav)|[Our Model](demo_audio/Smurf/V2.wav)|
 
 
