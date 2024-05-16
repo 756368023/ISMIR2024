@@ -13,3 +13,10 @@ We introduce a versatile zero-shot music style transfer system that leverages th
 [Original](demo_audio/Smurf/Original.wav) style-transfer command: "A country song with acoustic guitars." [Baseline1: MusicGen](demo_audio/Smurf/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/Smurf/V1.wav) [Our Model](demo_audio/Smurf/V2.wav)
 
 [Original](demo_audio/yyw/Original.wav) style-transfer command: "A cheerful EDM." [Baseline1: MusicGen](demo_audio/yyw/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/yyw/V1.wav) [Our Model](demo_audio/yyw/V2.wav)
+
+| Origina | style-transfer command | Baseline1: MusicGen | Baseline2: Coco-Mulla |
+|---------|------------------------|---------------------|-----------------------|
+| [Original](demo_audio/Alone/Original.wav) | [Original](demo_audio/Alone/Original.wav)  | [Original](demo_audio/Alone/Original.wav)  |
+
+
+
