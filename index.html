@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+        margin: 0;
+    }
+    h1 {
+        color: #2c3e50;
+        text-align: center;
+    }
+    p {
+        margin: 20px 0;
+    }
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #3498db;
+        color: white;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    audio {
+        width: 100%; /* Responsive audio controls */
+    }
+</style>
 <head>
-<meta charset="UTF-8">
-<title>Zero-Shot Music Style Transfer</title>
+  <meta charset="UTF-8">
+  <title>Zero-Shot Music Style Transfer</title>
 </head>
 <body>
-<h1>FLEXIBLE ZERO-SHOT MUSIC STYLE TRANSFER VIA CLOSING THE LOOP OF LLM-BASED ANALYSIS AND GENERATION</h1>
-<p>We introduce a versatile zero-shot music style transfer system that leverages the generalizability of large language models (LLMs) for music style analysis and generation. Our method begins by analyzing a music piece using a music understanding LLM, MU-LLaMA, which extracts a text description, and traditional music information retrieval tools to estimate musical contents. With an arbitrary text-based style-transfer command, we employ GPT-4, enhanced through prompt engineering, to adjust these descriptions towards the desired style. These revised descriptions are then input into a novel music generation model, Coco-Mulla, designed to generate music based on textual and content-based controls.</p>
-<h2>Style-Transfer Demo Audio</h2>
-<table>
-<tr>
-<th>Original</th>
-<th>style-transfer command</th>
-<th>Baseline1: MusicGen</th>
-<th>Baseline2: Coco-Mulla</th>
-<th>Our Model</th>
-</tr>
-<tr>
-<td><audio controls><source src="demo_audio/Alone/Original.wav" type="audio/wav"></audio></td>
-<td>"Add some acoustic instruments."</td>
-<td><audio controls><source src="demo_audio/Alone/MusicGen.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Alone/V1.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Alone/V2.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
-<td><audio controls><source src="demo_audio/yyw/Original.wav" type="audio/wav"></audio></td>
-<td>"A cheerful EDM."</td>
-<td><audio controls><source src="demo_audio/yyw/MusicGen.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/yyw/V1.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/yyw/V2.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
-<td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/Original.wav" type="audio/wav"></audio></td>
-<td>"A pop piece that sounds epic and orchestral."</td>
-<td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/MusicGen.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/V1.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/V2.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
-<td><audio controls><source src="demo_audio/Layla/Original.wav" type="audio/wav"></audio></td>
-<td>"A piece that sounds futuristic."</td>
-<td><audio controls><source src="demo_audio/Layla/MusicGen.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Layla/V1.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Layla/V2.wav" type="audio/wav"></audio></td>
-</tr>
-<tr>
-<td><audio controls><source src="demo_audio/Smurf/Original.wav" type="audio/wav"></audio></td>
-<td>"A country song with acoustic guitars."</td>
-<td><audio controls><source src="demo_audio/Smurf/MusicGen.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Smurf/V1.wav" type="audio/wav"></audio></td>
-<td><audio controls><source src="demo_audio/Smurf/V2.wav" type="audio/wav"></audio></td>
-</tr>
-</table>
+  <h1>FLEXIBLE ZERO-SHOT MUSIC STYLE TRANSFER VIA CLOSING THE LOOP OF LLM-BASED ANALYSIS AND GENERATION</h1>
+  <p>We introduce a versatile zero-shot music style transfer system that leverages the generalizability of large language models (LLMs) for music style analysis and generation. Our method begins by analyzing a music piece using a music understanding LLM, MU-LLaMA, which extracts a text description, and traditional music information retrieval tools to estimate musical contents. With an arbitrary text-based style-transfer command, we employ GPT-4, enhanced through prompt engineering, to adjust these descriptions towards the desired style. These revised descriptions are then input into a novel music generation model, Coco-Mulla, designed to generate music based on textual and content-based controls.</p>
+  <h2>Style-Transfer Demo Audio</h2>
+  <table>
+    <tr>
+      <th>Original</th>
+      <th>style-transfer command</th>
+      <th>Baseline1: MusicGen</th>
+      <th>Baseline2: Coco-Mulla</th>
+      <th>Our Model</th>
+    </tr>
+    <tr>
+      <td><audio controls><source src="demo_audio/Alone/Original.wav" type="audio/wav"></audio></td>
+      <td>"Add some acoustic instruments."</td>
+      <td><audio controls><source src="demo_audio/Alone/MusicGen.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Alone/V1.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Alone/V2.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td><audio controls><source src="demo_audio/yyw/Original.wav" type="audio/wav"></audio></td>
+      <td>"A cheerful EDM."</td>
+      <td><audio controls><source src="demo_audio/yyw/MusicGen.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/yyw/V1.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/yyw/V2.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/Original.wav" type="audio/wav"></audio></td>
+      <td>"A pop piece that sounds epic and orchestral."</td>
+      <td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/MusicGen.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/V1.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Never-Gonna-Give-You-Up/V2.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td><audio controls><source src="demo_audio/Layla/Original.wav" type="audio/wav"></audio></td>
+      <td>"A piece that sounds futuristic."</td>
+      <td><audio controls><source src="demo_audio/Layla/MusicGen.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Layla/V1.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Layla/V2.wav" type="audio/wav"></audio></td>
+    </tr>
+    <tr>
+      <td><audio controls><source src="demo_audio/Smurf/Original.wav" type="audio/wav"></audio></td>
+      <td>"A country song with acoustic guitars."</td>
+      <td><audio controls><source src="demo_audio/Smurf/MusicGen.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Smurf/V1.wav" type="audio/wav"></audio></td>
+      <td><audio controls><source src="demo_audio/Smurf/V2.wav" type="audio/wav"></audio></td>
+    </tr>
+  </table>
 </body>
 </html>
