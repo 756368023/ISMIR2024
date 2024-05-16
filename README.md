@@ -4,19 +4,12 @@ We introduce a versatile zero-shot music style transfer system that leverages th
 
 ## Style-Transfer Demo Audio
 
-[Original](demo_audio/Alone/Original.wav) style-transfer command: "Add some acoustic instruments." [Baseline1: MusicGen](demo_audio/Alone/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/Alone/V1.wav) [Our Model](demo_audio/Alone/V2.wav)
-
-[Original](demo_audio/Layla/Original.wav) style-transfer command: "A piece that sounds Futuristic." [Baseline1: MusicGen](demo_audio/Layla/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/Layla/V1.wav) [Our Model](demo_audio/Layla/V2.wav)
-
-[Original](demo_audio/Never-Gonna-Give-You-Up/Original.wav) style-transfer command: "A pop piece that sounds epic and orchestral." [Baseline1: MusicGen](demo_audio/Never-Gonna-Give-You-Up/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/Never-Gonna-Give-You-Up/V1.wav) [Our Model](demo_audio/Never-Gonna-Give-You-Up/V2.wav)
-
-[Original](demo_audio/Smurf/Original.wav) style-transfer command: "A country song with acoustic guitars." [Baseline1: MusicGen](demo_audio/Smurf/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/Smurf/V1.wav) [Our Model](demo_audio/Smurf/V2.wav)
-
-[Original](demo_audio/yyw/Original.wav) style-transfer command: "A cheerful EDM." [Baseline1: MusicGen](demo_audio/yyw/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/yyw/V1.wav) [Our Model](demo_audio/yyw/V2.wav)
-
 | Origina | style-transfer command | Baseline1: MusicGen | Baseline2: Coco-Mulla | Our Model |
 |---------|------------------------|---------------------|-----------------------|-----------|
-|[Original](demo_audio/Alone/Original.wav)|"Add some acoustic instruments."|[Baseline1: MusicGen](demo_audio/Alone/MusicGen.wav)|[Baseline2: Coco-Mulla](demo_audio/Alone/V1.wav)|[Our Model](demo_audio/Alone/V2.wav)|
-[Original](demo_audio/Layla/Original.wav)|"A piece that sounds Futuristic."|[Baseline1: MusicGen](demo_audio/Layla/MusicGen.wav) [Baseline2: Coco-Mulla](demo_audio/Layla/V1.wav) [Our Model](demo_audio/Layla/V2.wav)
+|[Original](demo_audio/Alone/Original.wav)|"Add some acoustic instruments."|[MusicGen](demo_audio/Alone/MusicGen.wav)|[Coco-Mulla](demo_audio/Alone/V1.wav)|[Our Model](demo_audio/Alone/V2.wav)|
+[Original](demo_audio/yyw/Original.wav)|"A cheerful EDM."|[MusicGen](demo_audio/yyw/MusicGen.wav) [Coco-Mulla](demo_audio/yyw/V1.wav) [Our Model](demo_audio/yyw/V2.wav)|
+[Original](demo_audio/Never-Gonna-Give-You-Up/Original.wav)|"A pop piece that sounds epic and orchestral."|[MusicGen](demo_audio/Never-Gonna-Give-You-Up/MusicGen.wav) [Coco-Mulla](demo_audio/Never-Gonna-Give-You-Up/V1.wav) [Our Model](demo_audio/Never-Gonna-Give-You-Up/V2.wav)|
+[Original](demo_audio/Layla/Original.wav)|"A piece that sounds Futuristic."|[MusicGen](demo_audio/Layla/MusicGen.wav) [Coco-Mulla](demo_audio/Layla/V1.wav) [Our Model](demo_audio/Layla/V2.wav)|
+[Original](demo_audio/Smurf/Original.wav)|"A country song with acoustic guitars."|[MusicGen](demo_audio/Smurf/MusicGen.wav) [Coco-Mulla](demo_audio/Smurf/V1.wav) [Our Model](demo_audio/Smurf/V2.wav)|
 
 
